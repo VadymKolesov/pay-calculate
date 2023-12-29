@@ -92,12 +92,12 @@ function sumSalary() {
     if (!refs.vacations.value) {
       urlop = 0;
     } else {
-      urlop = refs.rate.value * refs.vacations.value * 1.1 * 8;
+      urlop = refs.rate.value * refs.vacations.value * 8 * 0.1;
     }
     if (!refs.l4.value) {
       chorobowe = 0;
     } else {
-      chorobowe = refs.rate.value * refs.l4.value * 0.8 * 8;
+      chorobowe = refs.rate.value * refs.l4.value * 8 * 0.08;
     }
   } else {
     clear = Number(refs.rate.value);
@@ -118,12 +118,12 @@ function sumSalary() {
       if (!refs.vacations.value) {
         urlop = 0;
       } else {
-        urlop = rateClear * refs.vacations.value * 1.1 * 8;
+        urlop = rateClear * refs.vacations.value * 8 * 0.1;
       }
       if (!refs.l4.value) {
         chorobowe = 0;
       } else {
-        chorobowe = rateClear * refs.l4.value * 0.8 * 8;
+        chorobowe = rateClear * refs.l4.value * 8 * 0.08;
       }
     } else if (!refs.amountHours.value) {
       fifth = 0;
@@ -133,7 +133,7 @@ function sumSalary() {
     }
   }
   brutto =
-    clear + fifth + hundred + urlop + chorobowe + Number(refs.bonus.value);
+    clear + fifth + hundred + urlop - chorobowe + Number(refs.bonus.value);
   netto = brutto * tax;
   refs.titleBrutto.textContent = brutto.toFixed(2);
   refs.titleNetto.textContent = netto.toFixed(2);
