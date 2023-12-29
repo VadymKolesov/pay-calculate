@@ -1,0 +1,21 @@
+{
+  "name": "Salary Calculate",
+  "short_name": "salary-calculate",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./images/money.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./images/money.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
