@@ -1,4 +1,5 @@
 const refs = {
+  form: document.querySelector("form"),
   checkbox: document.querySelector(".toggle-checkbox"),
   hourlyTitle: document.querySelector(".hourly-title"),
   monthTitle: document.querySelector(".month-title"),
@@ -14,6 +15,7 @@ const refs = {
   vacations: document.querySelector(".vacations"),
   l4: document.querySelector(".l4"),
   submitBtn: document.querySelector(".send-btn"),
+  clearBtn: document.querySelector(".clear-btn"),
   titleBrutto: document.querySelector(".salary-brutto"),
   titleNetto: document.querySelector(".salary-netto"),
   bonus: document.querySelector(".bonus"),
@@ -139,7 +141,12 @@ function sumSalary() {
 }
 
 refs.closeSalaryBtn.addEventListener("click", hideResults);
+refs.clearBtn.addEventListener("click", clearForm);
 
 function hideResults() {
   refs.results.classList.remove("show-result");
+}
+
+function clearForm() {
+  refs.form.reset();
 }
