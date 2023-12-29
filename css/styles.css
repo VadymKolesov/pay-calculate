@@ -210,13 +210,14 @@ input:checked + .slider:before {
   font-size: 10px;
   text-align: end;
   color: rgb(51, 60, 65);
+  font-size: 13px;
 }
 
 .info > label > span {
   position: absolute;
   color: rgb(51, 60, 65);
   right: 15px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
 }
 

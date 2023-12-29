@@ -29,8 +29,8 @@ function maxedLengthInput(e) {
     return;
   }
   refs.inputs.forEach((input) => {
-    if (input.value.length > 6) {
-      input.value = input.value.slice(0, 6);
+    if (input.value.length > 5) {
+      input.value = input.value.slice(0, 5);
     }
   });
 }
