@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Pay Calculate</title>
+  </head>
+  <body>
+    <form>
+      <div class="pay-type">
+        <h2>Калькулятор зарплатні</h2>
+        <div class="toggle">
+          <p class="hourly-title">Погодинна ставка</p>
+          <label class="switch">
+            <input class="toggle-checkbox" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <p class="month-title">Ставка за місяць</p>
+        </div>
+      </div>
+      <div class="forms">
+        <div class="info">
+          <label>
+            <p>Ставка</p>
+            <input class="rate" type="number" />
+            <span>zł</span>
+          </label>
+          <label class="age-item">
+            <p>Вік</p>
+            <input class="age" type="number" />
+            <span>р.</span>
+          </label>
+          <label class="hours-item">
+            <p>Кількість годин (без надгодин)</p>
+            <input class="amount-hours" type="number" />
+            <span>г.</span>
+          </label>
+          <label class="hours-50-item">
+            <p>Кількість надгодин 50%</p>
+            <input class="amount-50" type="number" />
+            <span>г.</span>
+          </label>
+          <label>
+            <p>Кількість надгодин 100%</p>
+            <input class="amount-100" type="number" />
+            <span>г.</span>
+          </label>
+        </div>
+        <div class="info">
+          <label>
+            <p>Кількість днів "Urlop"</p>
+            <input class="vacations" type="number" />
+            <span>д.</span>
+          </label>
+          <label>
+            <p>Кількість днів "L4"</p>
+            <input class="l4" type="number" />
+            <span>д.</span>
+          </label>
+          <label>
+            <p>Сума Бонусу (брутто)</p>
+            <input class="bonus" type="number" />
+            <span>zł</span>
+          </label>
+        </div>
+      </div>
+    </form>
+    <button type="button" class="send-btn">Розрахувати</button>
+
+    <div class="result">
+      <p class="close-salary-btn">X</p>
+      <div>
+        <h2 class="salary-title">Brutto</h2>
+        <h2 class="salary-brutto"></h2>
+      </div>
+      <div>
+        <h2 class="salary-title">Netto</h2>
+        <h2 class="salary-netto"></h2>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
