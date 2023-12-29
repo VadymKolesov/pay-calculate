@@ -71,7 +71,7 @@ function sumSalary() {
   if (refs.age.value < 26) {
     tax = 0.7853;
   } else if (refs.age.value >= 26) {
-    tax = 0.7147;
+    tax = 0.7321;
   }
 
   if (!refs.checkbox.checked) {

@@ -67,8 +67,8 @@ body {
 }
 
 .container {
-  max-width: 768px;
-  padding: 0 94px;
+  max-width: 420px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -79,20 +79,21 @@ form {
 }
 
 .pay-type {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0 30px 0;
+  padding: 20px 0 0 0;
 }
 
 .pay-type > h2 {
   text-align: center;
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 500;
   color: white;
   background-color: #38a8d4;
-  width: 290px;
-  padding: 10px;
+  width: 100%;
+  padding: 15px;
   border-radius: 10px;
 }
 
@@ -107,17 +108,18 @@ form {
 }
 
 .toggle {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
 }
 
 .toggle > p {
-  width: 100px;
-  font-size: 10px;
-  padding: 10px;
+  width: 150px;
+  font-size: 17px;
+  padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
@@ -168,18 +170,19 @@ input:checked + .slider:before {
 .forms {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
+  width: 100%;
 }
 
 .info {
   color: white;
   background-color: #38a8d4;
-  width: 290px;
-  padding: 20px;
+  width: 100%;
+  padding: 25px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   gap: 10px;
 }
 
@@ -192,14 +195,14 @@ input:checked + .slider:before {
 }
 
 .info > label > p {
-  font-size: 10px;
-  width: 150px;
+  font-size: 15px;
+  width: 100%;
   text-align: end;
 }
 
 .info > label > input {
   width: 80px;
-  height: 30px;
+  height: 40px;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -219,14 +222,14 @@ input:checked + .slider:before {
 
 .send-btn {
   background-color: #38a8d4;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 15px;
+  padding: 20px;
   color: #ffffff;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .result {
@@ -236,7 +239,6 @@ input:checked + .slider:before {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
   display: flex;
   flex-direction: column;
   justify-content: center;
